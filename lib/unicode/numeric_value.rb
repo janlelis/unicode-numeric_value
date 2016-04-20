@@ -12,7 +12,7 @@ module Unicode
 
     def self.chars
       require_relative "numeric_value/index" unless defined? ::Unicode::NumericValue::INDEX
-      INDEX.keys.map{ |codepoint| [codepoint].pack("U") }
+      INDEX.keys.sort.map{ |codepoint| [codepoint].pack("U") }
     end
   end
 end

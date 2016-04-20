@@ -25,6 +25,7 @@ Unicode::NumericValue.of("⓳") # => 19
 Unicode::NumericValue.of("¾") # => (3/4)
 Unicode::NumericValue.of("༳") # => (-1/2)
 Unicode::NumericValue.of("𖭡") # => 1000000000000
+Unicode::NumericValue.of("五") # => 5
 Unicode::NumericValue.of("A") # => nil
 ```
 
@@ -47,7 +48,6 @@ puts "Codepoint | Character | Numeric Value | Name\n" \
       ].join(" | ")
     }.join("\n")
 ```
-
 Codepoint | Character | Numeric Value | Name
 ----------|-----------|---------------|-----
    U+0030 |         0 |             0 | DIGIT ZERO
@@ -679,6 +679,64 @@ Codepoint | Character | Numeric Value | Name
    U+32BD |         ㊽ |            48 | CIRCLED NUMBER FORTY EIGHT
    U+32BE |         ㊾ |            49 | CIRCLED NUMBER FORTY NINE
    U+32BF |         ㊿ |            50 | CIRCLED NUMBER FIFTY
+   U+3405 |         㐅 |             5 | CJK UNIFIED IDEOGRAPH-3405
+   U+3483 |         㒃 |             2 | CJK UNIFIED IDEOGRAPH-3483
+   U+382A |         㠪 |             5 | CJK UNIFIED IDEOGRAPH-382A
+   U+3B4D |         㭍 |             7 | CJK UNIFIED IDEOGRAPH-3B4D
+   U+4E00 |         一 |             1 | CJK UNIFIED IDEOGRAPH-4E00
+   U+4E03 |         七 |             7 | CJK UNIFIED IDEOGRAPH-4E03
+   U+4E07 |         万 |         10000 | CJK UNIFIED IDEOGRAPH-4E07
+   U+4E09 |         三 |             3 | CJK UNIFIED IDEOGRAPH-4E09
+   U+4E5D |         九 |             9 | CJK UNIFIED IDEOGRAPH-4E5D
+   U+4E8C |         二 |             2 | CJK UNIFIED IDEOGRAPH-4E8C
+   U+4E94 |         五 |             5 | CJK UNIFIED IDEOGRAPH-4E94
+   U+4E96 |         亖 |             4 | CJK UNIFIED IDEOGRAPH-4E96
+   U+4EBF |         亿 |     100000000 | CJK UNIFIED IDEOGRAPH-4EBF
+   U+4EC0 |         什 |            10 | CJK UNIFIED IDEOGRAPH-4EC0
+   U+4EDF |         仟 |          1000 | CJK UNIFIED IDEOGRAPH-4EDF
+   U+4EE8 |         仨 |             3 | CJK UNIFIED IDEOGRAPH-4EE8
+   U+4F0D |         伍 |             5 | CJK UNIFIED IDEOGRAPH-4F0D
+   U+4F70 |         佰 |           100 | CJK UNIFIED IDEOGRAPH-4F70
+   U+5104 |         億 |     100000000 | CJK UNIFIED IDEOGRAPH-5104
+   U+5146 |         兆 | 1000000000000 | CJK UNIFIED IDEOGRAPH-5146
+   U+5169 |         兩 |             2 | CJK UNIFIED IDEOGRAPH-5169
+   U+516B |         八 |             8 | CJK UNIFIED IDEOGRAPH-516B
+   U+516D |         六 |             6 | CJK UNIFIED IDEOGRAPH-516D
+   U+5341 |         十 |            10 | CJK UNIFIED IDEOGRAPH-5341
+   U+5343 |         千 |          1000 | CJK UNIFIED IDEOGRAPH-5343
+   U+5344 |         卄 |            20 | CJK UNIFIED IDEOGRAPH-5344
+   U+5345 |         卅 |            30 | CJK UNIFIED IDEOGRAPH-5345
+   U+534C |         卌 |            40 | CJK UNIFIED IDEOGRAPH-534C
+   U+53C1 |         叁 |             3 | CJK UNIFIED IDEOGRAPH-53C1
+   U+53C2 |         参 |             3 | CJK UNIFIED IDEOGRAPH-53C2
+   U+53C3 |         參 |             3 | CJK UNIFIED IDEOGRAPH-53C3
+   U+53C4 |         叄 |             3 | CJK UNIFIED IDEOGRAPH-53C4
+   U+56DB |         四 |             4 | CJK UNIFIED IDEOGRAPH-56DB
+   U+58F1 |         壱 |             1 | CJK UNIFIED IDEOGRAPH-58F1
+   U+58F9 |         壹 |             1 | CJK UNIFIED IDEOGRAPH-58F9
+   U+5E7A |         幺 |             1 | CJK UNIFIED IDEOGRAPH-5E7A
+   U+5EFE |         廾 |             9 | CJK UNIFIED IDEOGRAPH-5EFE
+   U+5EFF |         廿 |            20 | CJK UNIFIED IDEOGRAPH-5EFF
+   U+5F0C |         弌 |             1 | CJK UNIFIED IDEOGRAPH-5F0C
+   U+5F0D |         弍 |             2 | CJK UNIFIED IDEOGRAPH-5F0D
+   U+5F0E |         弎 |             3 | CJK UNIFIED IDEOGRAPH-5F0E
+   U+5F10 |         弐 |             2 | CJK UNIFIED IDEOGRAPH-5F10
+   U+62FE |         拾 |            10 | CJK UNIFIED IDEOGRAPH-62FE
+   U+634C |         捌 |             8 | CJK UNIFIED IDEOGRAPH-634C
+   U+67D2 |         柒 |             7 | CJK UNIFIED IDEOGRAPH-67D2
+   U+6F06 |         漆 |             7 | CJK UNIFIED IDEOGRAPH-6F06
+   U+7396 |         玖 |             9 | CJK UNIFIED IDEOGRAPH-7396
+   U+767E |         百 |           100 | CJK UNIFIED IDEOGRAPH-767E
+   U+8086 |         肆 |             4 | CJK UNIFIED IDEOGRAPH-8086
+   U+842C |         萬 |         10000 | CJK UNIFIED IDEOGRAPH-842C
+   U+8CAE |         貮 |             2 | CJK UNIFIED IDEOGRAPH-8CAE
+   U+8CB3 |         貳 |             2 | CJK UNIFIED IDEOGRAPH-8CB3
+   U+8D30 |         贰 |             2 | CJK UNIFIED IDEOGRAPH-8D30
+   U+9621 |         阡 |          1000 | CJK UNIFIED IDEOGRAPH-9621
+   U+9646 |         陆 |             6 | CJK UNIFIED IDEOGRAPH-9646
+   U+964C |         陌 |           100 | CJK UNIFIED IDEOGRAPH-964C
+   U+9678 |         陸 |             6 | CJK UNIFIED IDEOGRAPH-9678
+   U+96F6 |         零 |             0 | CJK UNIFIED IDEOGRAPH-96F6
    U+A620 |         ꘠ |             0 | VAI DIGIT ZERO
    U+A621 |         ꘡ |             1 | VAI DIGIT ONE
    U+A622 |         ꘢ |             2 | VAI DIGIT TWO
@@ -1490,6 +1548,21 @@ Codepoint | Character | Numeric Value | Name
   U+1F10A |         🄊 |             9 | DIGIT NINE COMMA
   U+1F10B |         🄋 |             0 | DINGBAT CIRCLED SANS-SERIF DIGIT ZERO
   U+1F10C |         🄌 |             0 | DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT ZERO
+  U+20001 |         𠀁 |             7 | CJK UNIFIED IDEOGRAPH-20001
+  U+20064 |         𠁤 |             4 | CJK UNIFIED IDEOGRAPH-20064
+  U+200E2 |         𠃢 |             4 | CJK UNIFIED IDEOGRAPH-200E2
+  U+20121 |         𠄡 |             5 | CJK UNIFIED IDEOGRAPH-20121
+  U+2092A |         𠤪 |             1 | CJK UNIFIED IDEOGRAPH-2092A
+  U+20983 |         𠦃 |            30 | CJK UNIFIED IDEOGRAPH-20983
+  U+2098C |         𠦌 |            40 | CJK UNIFIED IDEOGRAPH-2098C
+  U+2099C |         𠦜 |            40 | CJK UNIFIED IDEOGRAPH-2099C
+  U+20AEA |         𠫪 |             6 | CJK UNIFIED IDEOGRAPH-20AEA
+  U+20AFD |         𠫽 |             3 | CJK UNIFIED IDEOGRAPH-20AFD
+  U+20B19 |         𠬙 |             3 | CJK UNIFIED IDEOGRAPH-20B19
+  U+22390 |         𢎐 |             2 | CJK UNIFIED IDEOGRAPH-22390
+  U+22998 |         𢦘 |             3 | CJK UNIFIED IDEOGRAPH-22998
+  U+23B1B |         𣬛 |             3 | CJK UNIFIED IDEOGRAPH-23B1B
+  U+2626D |         𦉭 |             4 | CJK UNIFIED IDEOGRAPH-2626D
   U+2F890 |         廾 |             9 | CJK COMPATIBILITY IDEOGRAPH-2F890
 
 See [unicode-x](https://github.com/janlelis/unicode-x) for more Unicode related micro libraries.
