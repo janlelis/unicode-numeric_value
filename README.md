@@ -2,7 +2,7 @@
 
 Convert a Unicode character into its numeric value.
 
-Unicode version: **8.0.0**
+Unicode version: **9.0.0**
 
 Supported Rubies: **2.3**, **2.2**, **2.1**
 
@@ -48,6 +48,7 @@ puts "Codepoint | Character | Numeric Value | Name\n" \
       ].join(" | ")
     }.join("\n")
 ```
+
 Codepoint | Character | Numeric Value | Name
 ----------|-----------|---------------|-----
    U+0030 |         0 |             0 | DIGIT ZERO
@@ -198,6 +199,13 @@ Codepoint | Character | Numeric Value | Name
    U+0CED |         ೭ |             7 | KANNADA DIGIT SEVEN
    U+0CEE |         ೮ |             8 | KANNADA DIGIT EIGHT
    U+0CEF |         ೯ |             9 | KANNADA DIGIT NINE
+   U+0D58 |         ൘ |       (1/160) | MALAYALAM FRACTION ONE ONE-HUNDRED-AND-SIXTIETH
+   U+0D59 |         ൙ |        (1/40) | MALAYALAM FRACTION ONE FORTIETH
+   U+0D5A |         ൚ |        (3/80) | MALAYALAM FRACTION THREE EIGHTIETHS
+   U+0D5B |         ൛ |        (1/20) | MALAYALAM FRACTION ONE TWENTIETH
+   U+0D5C |         ൜ |        (1/10) | MALAYALAM FRACTION ONE TENTH
+   U+0D5D |         ൝ |        (3/20) | MALAYALAM FRACTION THREE TWENTIETHS
+   U+0D5E |         ൞ |         (1/5) | MALAYALAM FRACTION ONE FIFTH
    U+0D66 |         ൦ |             0 | MALAYALAM DIGIT ZERO
    U+0D67 |         ൧ |             1 | MALAYALAM DIGIT ONE
    U+0D68 |         ൨ |             2 | MALAYALAM DIGIT TWO
@@ -214,6 +222,9 @@ Codepoint | Character | Numeric Value | Name
    U+0D73 |         ൳ |         (1/4) | MALAYALAM FRACTION ONE QUARTER
    U+0D74 |         ൴ |         (1/2) | MALAYALAM FRACTION ONE HALF
    U+0D75 |         ൵ |         (3/4) | MALAYALAM FRACTION THREE QUARTERS
+   U+0D76 |         ൶ |        (1/16) | MALAYALAM FRACTION ONE SIXTEENTH
+   U+0D77 |         ൷ |         (1/8) | MALAYALAM FRACTION ONE EIGHTH
+   U+0D78 |         ൸ |        (3/16) | MALAYALAM FRACTION THREE SIXTEENTHS
    U+0DE6 |         ෦ |             0 | SINHALA LITH DIGIT ZERO
    U+0DE7 |         ෧ |             1 | SINHALA LITH DIGIT ONE
    U+0DE8 |         ෨ |             2 | SINHALA LITH DIGIT TWO
@@ -1259,6 +1270,16 @@ Codepoint | Character | Numeric Value | Name
   U+112F7 |         𑋷 |             7 | KHUDAWADI DIGIT SEVEN
   U+112F8 |         𑋸 |             8 | KHUDAWADI DIGIT EIGHT
   U+112F9 |         𑋹 |             9 | KHUDAWADI DIGIT NINE
+  U+11450 |         𑑐 |             0 | NEWA DIGIT ZERO
+  U+11451 |         𑑑 |             1 | NEWA DIGIT ONE
+  U+11452 |         𑑒 |             2 | NEWA DIGIT TWO
+  U+11453 |         𑑓 |             3 | NEWA DIGIT THREE
+  U+11454 |         𑑔 |             4 | NEWA DIGIT FOUR
+  U+11455 |         𑑕 |             5 | NEWA DIGIT FIVE
+  U+11456 |         𑑖 |             6 | NEWA DIGIT SIX
+  U+11457 |         𑑗 |             7 | NEWA DIGIT SEVEN
+  U+11458 |         𑑘 |             8 | NEWA DIGIT EIGHT
+  U+11459 |         𑑙 |             9 | NEWA DIGIT NINE
   U+114D0 |         𑓐 |             0 | TIRHUTA DIGIT ZERO
   U+114D1 |         𑓑 |             1 | TIRHUTA DIGIT ONE
   U+114D2 |         𑓒 |             2 | TIRHUTA DIGIT TWO
@@ -1320,6 +1341,35 @@ Codepoint | Character | Numeric Value | Name
   U+118F0 |         𑣰 |            70 | WARANG CITI NUMBER SEVENTY
   U+118F1 |         𑣱 |            80 | WARANG CITI NUMBER EIGHTY
   U+118F2 |         𑣲 |            90 | WARANG CITI NUMBER NINETY
+  U+11C50 |         𑱐 |             0 | BHAIKSUKI DIGIT ZERO
+  U+11C51 |         𑱑 |             1 | BHAIKSUKI DIGIT ONE
+  U+11C52 |         𑱒 |             2 | BHAIKSUKI DIGIT TWO
+  U+11C53 |         𑱓 |             3 | BHAIKSUKI DIGIT THREE
+  U+11C54 |         𑱔 |             4 | BHAIKSUKI DIGIT FOUR
+  U+11C55 |         𑱕 |             5 | BHAIKSUKI DIGIT FIVE
+  U+11C56 |         𑱖 |             6 | BHAIKSUKI DIGIT SIX
+  U+11C57 |         𑱗 |             7 | BHAIKSUKI DIGIT SEVEN
+  U+11C58 |         𑱘 |             8 | BHAIKSUKI DIGIT EIGHT
+  U+11C59 |         𑱙 |             9 | BHAIKSUKI DIGIT NINE
+  U+11C5A |         𑱚 |             1 | BHAIKSUKI NUMBER ONE
+  U+11C5B |         𑱛 |             2 | BHAIKSUKI NUMBER TWO
+  U+11C5C |         𑱜 |             3 | BHAIKSUKI NUMBER THREE
+  U+11C5D |         𑱝 |             4 | BHAIKSUKI NUMBER FOUR
+  U+11C5E |         𑱞 |             5 | BHAIKSUKI NUMBER FIVE
+  U+11C5F |         𑱟 |             6 | BHAIKSUKI NUMBER SIX
+  U+11C60 |         𑱠 |             7 | BHAIKSUKI NUMBER SEVEN
+  U+11C61 |         𑱡 |             8 | BHAIKSUKI NUMBER EIGHT
+  U+11C62 |         𑱢 |             9 | BHAIKSUKI NUMBER NINE
+  U+11C63 |         𑱣 |            10 | BHAIKSUKI NUMBER TEN
+  U+11C64 |         𑱤 |            20 | BHAIKSUKI NUMBER TWENTY
+  U+11C65 |         𑱥 |            30 | BHAIKSUKI NUMBER THIRTY
+  U+11C66 |         𑱦 |            40 | BHAIKSUKI NUMBER FORTY
+  U+11C67 |         𑱧 |            50 | BHAIKSUKI NUMBER FIFTY
+  U+11C68 |         𑱨 |            60 | BHAIKSUKI NUMBER SIXTY
+  U+11C69 |         𑱩 |            70 | BHAIKSUKI NUMBER SEVENTY
+  U+11C6A |         𑱪 |            80 | BHAIKSUKI NUMBER EIGHTY
+  U+11C6B |         𑱫 |            90 | BHAIKSUKI NUMBER NINETY
+  U+11C6C |         𑱬 |           100 | BHAIKSUKI HUNDREDS UNIT MARK
   U+12400 |         𒐀 |             2 | CUNEIFORM NUMERIC SIGN TWO ASH
   U+12401 |         𒐁 |             3 | CUNEIFORM NUMERIC SIGN THREE ASH
   U+12402 |         𒐂 |             4 | CUNEIFORM NUMERIC SIGN FOUR ASH
@@ -1535,6 +1585,16 @@ Codepoint | Character | Numeric Value | Name
   U+1E8CD |         𞣍 |             7 | MENDE KIKAKUI DIGIT SEVEN
   U+1E8CE |         𞣎 |             8 | MENDE KIKAKUI DIGIT EIGHT
   U+1E8CF |         𞣏 |             9 | MENDE KIKAKUI DIGIT NINE
+  U+1E950 |         𞥐 |             0 | ADLAM DIGIT ZERO
+  U+1E951 |         𞥑 |             1 | ADLAM DIGIT ONE
+  U+1E952 |         𞥒 |             2 | ADLAM DIGIT TWO
+  U+1E953 |         𞥓 |             3 | ADLAM DIGIT THREE
+  U+1E954 |         𞥔 |             4 | ADLAM DIGIT FOUR
+  U+1E955 |         𞥕 |             5 | ADLAM DIGIT FIVE
+  U+1E956 |         𞥖 |             6 | ADLAM DIGIT SIX
+  U+1E957 |         𞥗 |             7 | ADLAM DIGIT SEVEN
+  U+1E958 |         𞥘 |             8 | ADLAM DIGIT EIGHT
+  U+1E959 |         𞥙 |             9 | ADLAM DIGIT NINE
   U+1F100 |         🄀 |             0 | DIGIT ZERO FULL STOP
   U+1F101 |         🄁 |             0 | DIGIT ZERO COMMA
   U+1F102 |         🄂 |             1 | DIGIT ONE COMMA

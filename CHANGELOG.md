@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.2.0
+
+* Support Unicode 9.0
+
 ### 1.1.0
 
 * Include numeric values from Unihan database
