@@ -4,7 +4,7 @@ Convert a Unicode character into its numeric value.
 
 Unicode version: **10.0.0**
 
-Supported Rubies: **2.3**, **2.2**, **2.1**
+Supported Rubies: **2.4**, **2.3**, **2.2**, **2.1**
 
 ## Gemfile
 
@@ -1370,6 +1370,16 @@ Codepoint | Character | Numeric Value | Name
   U+11C6A |         𑱪 |            80 | BHAIKSUKI NUMBER EIGHTY
   U+11C6B |         𑱫 |            90 | BHAIKSUKI NUMBER NINETY
   U+11C6C |         𑱬 |           100 | BHAIKSUKI HUNDREDS UNIT MARK
+  U+11D50 |         𑵐 |             0 | MASARAM GONDI DIGIT ZERO
+  U+11D51 |         𑵑 |             1 | MASARAM GONDI DIGIT ONE
+  U+11D52 |         𑵒 |             2 | MASARAM GONDI DIGIT TWO
+  U+11D53 |         𑵓 |             3 | MASARAM GONDI DIGIT THREE
+  U+11D54 |         𑵔 |             4 | MASARAM GONDI DIGIT FOUR
+  U+11D55 |         𑵕 |             5 | MASARAM GONDI DIGIT FIVE
+  U+11D56 |         𑵖 |             6 | MASARAM GONDI DIGIT SIX
+  U+11D57 |         𑵗 |             7 | MASARAM GONDI DIGIT SEVEN
+  U+11D58 |         𑵘 |             8 | MASARAM GONDI DIGIT EIGHT
+  U+11D59 |         𑵙 |             9 | MASARAM GONDI DIGIT NINE
   U+12400 |         𒐀 |             2 | CUNEIFORM NUMERIC SIGN TWO ASH
   U+12401 |         𒐁 |             3 | CUNEIFORM NUMERIC SIGN THREE ASH
   U+12402 |         𒐂 |             4 | CUNEIFORM NUMERIC SIGN FOUR ASH
@@ -1624,6 +1634,7 @@ Codepoint | Character | Numeric Value | Name
   U+23B1B |         𣬛 |             3 | CJK UNIFIED IDEOGRAPH-23B1B
   U+2626D |         𦉭 |             4 | CJK UNIFIED IDEOGRAPH-2626D
   U+2F890 |         廾 |             9 | CJK COMPATIBILITY IDEOGRAPH-2F890
+
 
 See [unicode-x](https://github.com/janlelis/unicode-x) for more Unicode related micro libraries.
 
