@@ -2,7 +2,7 @@
 
 Convert a Unicode character into its numeric value.
 
-Unicode version: **10.0.0**
+Unicode version: **11.0.0**
 
 Supported Rubies: **2.5**, **2.4**, **2.3**
 
@@ -1112,6 +1112,7 @@ Codepoint | Character | Numeric Value | Name
   U+10A45 |         𐩅 |            20 | KHAROSHTHI NUMBER TWENTY
   U+10A46 |         𐩆 |           100 | KHAROSHTHI NUMBER ONE HUNDRED
   U+10A47 |         𐩇 |          1000 | KHAROSHTHI NUMBER ONE THOUSAND
+  U+10A48 |         𐩈 |         (1/2) | KHAROSHTHI FRACTION ONE HALF
   U+10A7D |         𐩽 |             1 | OLD SOUTH ARABIAN NUMBER ONE
   U+10A7E |         𐩾 |            50 | OLD SOUTH ARABIAN NUMBER FIFTY
   U+10A9D |         𐪝 |             1 | OLD NORTH ARABIAN NUMBER ONE
@@ -1151,6 +1152,16 @@ Codepoint | Character | Numeric Value | Name
   U+10CFD |         𐳽 |            50 | OLD HUNGARIAN NUMBER FIFTY
   U+10CFE |         𐳾 |           100 | OLD HUNGARIAN NUMBER ONE HUNDRED
   U+10CFF |         𐳿 |          1000 | OLD HUNGARIAN NUMBER ONE THOUSAND
+  U+10D30 |         𐴰 |             0 | HANIFI ROHINGYA DIGIT ZERO
+  U+10D31 |         𐴱 |             1 | HANIFI ROHINGYA DIGIT ONE
+  U+10D32 |         𐴲 |             2 | HANIFI ROHINGYA DIGIT TWO
+  U+10D33 |         𐴳 |             3 | HANIFI ROHINGYA DIGIT THREE
+  U+10D34 |         𐴴 |             4 | HANIFI ROHINGYA DIGIT FOUR
+  U+10D35 |         𐴵 |             5 | HANIFI ROHINGYA DIGIT FIVE
+  U+10D36 |         𐴶 |             6 | HANIFI ROHINGYA DIGIT SIX
+  U+10D37 |         𐴷 |             7 | HANIFI ROHINGYA DIGIT SEVEN
+  U+10D38 |         𐴸 |             8 | HANIFI ROHINGYA DIGIT EIGHT
+  U+10D39 |         𐴹 |             9 | HANIFI ROHINGYA DIGIT NINE
   U+10E60 |         𐹠 |             1 | RUMI DIGIT ONE
   U+10E61 |         𐹡 |             2 | RUMI DIGIT TWO
   U+10E62 |         𐹢 |             3 | RUMI DIGIT THREE
@@ -1182,6 +1193,20 @@ Codepoint | Character | Numeric Value | Name
   U+10E7C |         𐹼 |         (1/4) | RUMI FRACTION ONE QUARTER
   U+10E7D |         𐹽 |         (1/3) | RUMI FRACTION ONE THIRD
   U+10E7E |         𐹾 |         (2/3) | RUMI FRACTION TWO THIRDS
+  U+10F1D |         𐼝 |             1 | OLD SOGDIAN NUMBER ONE
+  U+10F1E |         𐼞 |             2 | OLD SOGDIAN NUMBER TWO
+  U+10F1F |         𐼟 |             3 | OLD SOGDIAN NUMBER THREE
+  U+10F20 |         𐼠 |             4 | OLD SOGDIAN NUMBER FOUR
+  U+10F21 |         𐼡 |             5 | OLD SOGDIAN NUMBER FIVE
+  U+10F22 |         𐼢 |            10 | OLD SOGDIAN NUMBER TEN
+  U+10F23 |         𐼣 |            20 | OLD SOGDIAN NUMBER TWENTY
+  U+10F24 |         𐼤 |            30 | OLD SOGDIAN NUMBER THIRTY
+  U+10F25 |         𐼥 |           100 | OLD SOGDIAN NUMBER ONE HUNDRED
+  U+10F26 |         𐼦 |         (1/2) | OLD SOGDIAN FRACTION ONE HALF
+  U+10F51 |         𐽑 |             1 | SOGDIAN NUMBER ONE
+  U+10F52 |         𐽒 |            10 | SOGDIAN NUMBER TEN
+  U+10F53 |         𐽓 |            20 | SOGDIAN NUMBER TWENTY
+  U+10F54 |         𐽔 |           100 | SOGDIAN NUMBER ONE HUNDRED
   U+11052 |         𑁒 |             1 | BRAHMI NUMBER ONE
   U+11053 |         𑁓 |             2 | BRAHMI NUMBER TWO
   U+11054 |         𑁔 |             3 | BRAHMI NUMBER THREE
@@ -1382,6 +1407,16 @@ Codepoint | Character | Numeric Value | Name
   U+11D57 |         𑵗 |             7 | MASARAM GONDI DIGIT SEVEN
   U+11D58 |         𑵘 |             8 | MASARAM GONDI DIGIT EIGHT
   U+11D59 |         𑵙 |             9 | MASARAM GONDI DIGIT NINE
+  U+11DA0 |         𑶠 |             0 | GUNJALA GONDI DIGIT ZERO
+  U+11DA1 |         𑶡 |             1 | GUNJALA GONDI DIGIT ONE
+  U+11DA2 |         𑶢 |             2 | GUNJALA GONDI DIGIT TWO
+  U+11DA3 |         𑶣 |             3 | GUNJALA GONDI DIGIT THREE
+  U+11DA4 |         𑶤 |             4 | GUNJALA GONDI DIGIT FOUR
+  U+11DA5 |         𑶥 |             5 | GUNJALA GONDI DIGIT FIVE
+  U+11DA6 |         𑶦 |             6 | GUNJALA GONDI DIGIT SIX
+  U+11DA7 |         𑶧 |             7 | GUNJALA GONDI DIGIT SEVEN
+  U+11DA8 |         𑶨 |             8 | GUNJALA GONDI DIGIT EIGHT
+  U+11DA9 |         𑶩 |             9 | GUNJALA GONDI DIGIT NINE
   U+12400 |         𒐀 |             2 | CUNEIFORM NUMERIC SIGN TWO ASH
   U+12401 |         𒐁 |             3 | CUNEIFORM NUMERIC SIGN THREE ASH
   U+12402 |         𒐂 |             4 | CUNEIFORM NUMERIC SIGN FOUR ASH
@@ -1520,6 +1555,49 @@ Codepoint | Character | Numeric Value | Name
   U+16B5F |         𖭟 |     100000000 | PAHAWH HMONG NUMBER HUNDRED MILLIONS
   U+16B60 |         𖭠 |   10000000000 | PAHAWH HMONG NUMBER TEN BILLIONS
   U+16B61 |         𖭡 | 1000000000000 | PAHAWH HMONG NUMBER TRILLIONS
+  U+16E80 |         𖺀 |             0 | MEDEFAIDRIN DIGIT ZERO
+  U+16E81 |         𖺁 |             1 | MEDEFAIDRIN DIGIT ONE
+  U+16E82 |         𖺂 |             2 | MEDEFAIDRIN DIGIT TWO
+  U+16E83 |         𖺃 |             3 | MEDEFAIDRIN DIGIT THREE
+  U+16E84 |         𖺄 |             4 | MEDEFAIDRIN DIGIT FOUR
+  U+16E85 |         𖺅 |             5 | MEDEFAIDRIN DIGIT FIVE
+  U+16E86 |         𖺆 |             6 | MEDEFAIDRIN DIGIT SIX
+  U+16E87 |         𖺇 |             7 | MEDEFAIDRIN DIGIT SEVEN
+  U+16E88 |         𖺈 |             8 | MEDEFAIDRIN DIGIT EIGHT
+  U+16E89 |         𖺉 |             9 | MEDEFAIDRIN DIGIT NINE
+  U+16E8A |         𖺊 |            10 | MEDEFAIDRIN NUMBER TEN
+  U+16E8B |         𖺋 |            11 | MEDEFAIDRIN NUMBER ELEVEN
+  U+16E8C |         𖺌 |            12 | MEDEFAIDRIN NUMBER TWELVE
+  U+16E8D |         𖺍 |            13 | MEDEFAIDRIN NUMBER THIRTEEN
+  U+16E8E |         𖺎 |            14 | MEDEFAIDRIN NUMBER FOURTEEN
+  U+16E8F |         𖺏 |            15 | MEDEFAIDRIN NUMBER FIFTEEN
+  U+16E90 |         𖺐 |            16 | MEDEFAIDRIN NUMBER SIXTEEN
+  U+16E91 |         𖺑 |            17 | MEDEFAIDRIN NUMBER SEVENTEEN
+  U+16E92 |         𖺒 |            18 | MEDEFAIDRIN NUMBER EIGHTEEN
+  U+16E93 |         𖺓 |            19 | MEDEFAIDRIN NUMBER NINETEEN
+  U+16E94 |         𖺔 |             1 | MEDEFAIDRIN DIGIT ONE ALTERNATE FORM
+  U+16E95 |         𖺕 |             2 | MEDEFAIDRIN DIGIT TWO ALTERNATE FORM
+  U+16E96 |         𖺖 |             3 | MEDEFAIDRIN DIGIT THREE ALTERNATE FORM
+  U+1D2E0 |         𝋠 |             0 | MAYAN NUMERAL ZERO
+  U+1D2E1 |         𝋡 |             1 | MAYAN NUMERAL ONE
+  U+1D2E2 |         𝋢 |             2 | MAYAN NUMERAL TWO
+  U+1D2E3 |         𝋣 |             3 | MAYAN NUMERAL THREE
+  U+1D2E4 |         𝋤 |             4 | MAYAN NUMERAL FOUR
+  U+1D2E5 |         𝋥 |             5 | MAYAN NUMERAL FIVE
+  U+1D2E6 |         𝋦 |             6 | MAYAN NUMERAL SIX
+  U+1D2E7 |         𝋧 |             7 | MAYAN NUMERAL SEVEN
+  U+1D2E8 |         𝋨 |             8 | MAYAN NUMERAL EIGHT
+  U+1D2E9 |         𝋩 |             9 | MAYAN NUMERAL NINE
+  U+1D2EA |         𝋪 |            10 | MAYAN NUMERAL TEN
+  U+1D2EB |         𝋫 |            11 | MAYAN NUMERAL ELEVEN
+  U+1D2EC |         𝋬 |            12 | MAYAN NUMERAL TWELVE
+  U+1D2ED |         𝋭 |            13 | MAYAN NUMERAL THIRTEEN
+  U+1D2EE |         𝋮 |            14 | MAYAN NUMERAL FOURTEEN
+  U+1D2EF |         𝋯 |            15 | MAYAN NUMERAL FIFTEEN
+  U+1D2F0 |         𝋰 |            16 | MAYAN NUMERAL SIXTEEN
+  U+1D2F1 |         𝋱 |            17 | MAYAN NUMERAL SEVENTEEN
+  U+1D2F2 |         𝋲 |            18 | MAYAN NUMERAL EIGHTEEN
+  U+1D2F3 |         𝋳 |            19 | MAYAN NUMERAL NINETEEN
   U+1D360 |         𝍠 |             1 | COUNTING ROD UNIT DIGIT ONE
   U+1D361 |         𝍡 |             2 | COUNTING ROD UNIT DIGIT TWO
   U+1D362 |         𝍢 |             3 | COUNTING ROD UNIT DIGIT THREE
@@ -1538,6 +1616,13 @@ Codepoint | Character | Numeric Value | Name
   U+1D36F |         𝍯 |            70 | COUNTING ROD TENS DIGIT SEVEN
   U+1D370 |         𝍰 |            80 | COUNTING ROD TENS DIGIT EIGHT
   U+1D371 |         𝍱 |            90 | COUNTING ROD TENS DIGIT NINE
+  U+1D372 |         𝍲 |             1 | IDEOGRAPHIC TALLY MARK ONE
+  U+1D373 |         𝍳 |             2 | IDEOGRAPHIC TALLY MARK TWO
+  U+1D374 |         𝍴 |             3 | IDEOGRAPHIC TALLY MARK THREE
+  U+1D375 |         𝍵 |             4 | IDEOGRAPHIC TALLY MARK FOUR
+  U+1D376 |         𝍶 |             5 | IDEOGRAPHIC TALLY MARK FIVE
+  U+1D377 |         𝍷 |             1 | TALLY MARK ONE
+  U+1D378 |         𝍸 |             5 | TALLY MARK FIVE
   U+1D7CE |         𝟎 |             0 | MATHEMATICAL BOLD DIGIT ZERO
   U+1D7CF |         𝟏 |             1 | MATHEMATICAL BOLD DIGIT ONE
   U+1D7D0 |         𝟐 |             2 | MATHEMATICAL BOLD DIGIT TWO
@@ -1607,6 +1692,72 @@ Codepoint | Character | Numeric Value | Name
   U+1E957 |         𞥗 |             7 | ADLAM DIGIT SEVEN
   U+1E958 |         𞥘 |             8 | ADLAM DIGIT EIGHT
   U+1E959 |         𞥙 |             9 | ADLAM DIGIT NINE
+  U+1EC71 |         𞱱 |             1 | INDIC SIYAQ NUMBER ONE
+  U+1EC72 |         𞱲 |             2 | INDIC SIYAQ NUMBER TWO
+  U+1EC73 |         𞱳 |             3 | INDIC SIYAQ NUMBER THREE
+  U+1EC74 |         𞱴 |             4 | INDIC SIYAQ NUMBER FOUR
+  U+1EC75 |         𞱵 |             5 | INDIC SIYAQ NUMBER FIVE
+  U+1EC76 |         𞱶 |             6 | INDIC SIYAQ NUMBER SIX
+  U+1EC77 |         𞱷 |             7 | INDIC SIYAQ NUMBER SEVEN
+  U+1EC78 |         𞱸 |             8 | INDIC SIYAQ NUMBER EIGHT
+  U+1EC79 |         𞱹 |             9 | INDIC SIYAQ NUMBER NINE
+  U+1EC7A |         𞱺 |            10 | INDIC SIYAQ NUMBER TEN
+  U+1EC7B |         𞱻 |            20 | INDIC SIYAQ NUMBER TWENTY
+  U+1EC7C |         𞱼 |            30 | INDIC SIYAQ NUMBER THIRTY
+  U+1EC7D |         𞱽 |            40 | INDIC SIYAQ NUMBER FORTY
+  U+1EC7E |         𞱾 |            50 | INDIC SIYAQ NUMBER FIFTY
+  U+1EC7F |         𞱿 |            60 | INDIC SIYAQ NUMBER SIXTY
+  U+1EC80 |         𞲀 |            70 | INDIC SIYAQ NUMBER SEVENTY
+  U+1EC81 |         𞲁 |            80 | INDIC SIYAQ NUMBER EIGHTY
+  U+1EC82 |         𞲂 |            90 | INDIC SIYAQ NUMBER NINETY
+  U+1EC83 |         𞲃 |           100 | INDIC SIYAQ NUMBER ONE HUNDRED
+  U+1EC84 |         𞲄 |           200 | INDIC SIYAQ NUMBER TWO HUNDRED
+  U+1EC85 |         𞲅 |           300 | INDIC SIYAQ NUMBER THREE HUNDRED
+  U+1EC86 |         𞲆 |           400 | INDIC SIYAQ NUMBER FOUR HUNDRED
+  U+1EC87 |         𞲇 |           500 | INDIC SIYAQ NUMBER FIVE HUNDRED
+  U+1EC88 |         𞲈 |           600 | INDIC SIYAQ NUMBER SIX HUNDRED
+  U+1EC89 |         𞲉 |           700 | INDIC SIYAQ NUMBER SEVEN HUNDRED
+  U+1EC8A |         𞲊 |           800 | INDIC SIYAQ NUMBER EIGHT HUNDRED
+  U+1EC8B |         𞲋 |           900 | INDIC SIYAQ NUMBER NINE HUNDRED
+  U+1EC8C |         𞲌 |          1000 | INDIC SIYAQ NUMBER ONE THOUSAND
+  U+1EC8D |         𞲍 |          2000 | INDIC SIYAQ NUMBER TWO THOUSAND
+  U+1EC8E |         𞲎 |          3000 | INDIC SIYAQ NUMBER THREE THOUSAND
+  U+1EC8F |         𞲏 |          4000 | INDIC SIYAQ NUMBER FOUR THOUSAND
+  U+1EC90 |         𞲐 |          5000 | INDIC SIYAQ NUMBER FIVE THOUSAND
+  U+1EC91 |         𞲑 |          6000 | INDIC SIYAQ NUMBER SIX THOUSAND
+  U+1EC92 |         𞲒 |          7000 | INDIC SIYAQ NUMBER SEVEN THOUSAND
+  U+1EC93 |         𞲓 |          8000 | INDIC SIYAQ NUMBER EIGHT THOUSAND
+  U+1EC94 |         𞲔 |          9000 | INDIC SIYAQ NUMBER NINE THOUSAND
+  U+1EC95 |         𞲕 |         10000 | INDIC SIYAQ NUMBER TEN THOUSAND
+  U+1EC96 |         𞲖 |         20000 | INDIC SIYAQ NUMBER TWENTY THOUSAND
+  U+1EC97 |         𞲗 |         30000 | INDIC SIYAQ NUMBER THIRTY THOUSAND
+  U+1EC98 |         𞲘 |         40000 | INDIC SIYAQ NUMBER FORTY THOUSAND
+  U+1EC99 |         𞲙 |         50000 | INDIC SIYAQ NUMBER FIFTY THOUSAND
+  U+1EC9A |         𞲚 |         60000 | INDIC SIYAQ NUMBER SIXTY THOUSAND
+  U+1EC9B |         𞲛 |         70000 | INDIC SIYAQ NUMBER SEVENTY THOUSAND
+  U+1EC9C |         𞲜 |         80000 | INDIC SIYAQ NUMBER EIGHTY THOUSAND
+  U+1EC9D |         𞲝 |         90000 | INDIC SIYAQ NUMBER NINETY THOUSAND
+  U+1EC9E |         𞲞 |        100000 | INDIC SIYAQ NUMBER LAKH
+  U+1EC9F |         𞲟 |        200000 | INDIC SIYAQ NUMBER LAKHAN
+  U+1ECA0 |         𞲠 |        100000 | INDIC SIYAQ LAKH MARK
+  U+1ECA1 |         𞲡 |      10000000 | INDIC SIYAQ NUMBER KAROR
+  U+1ECA2 |         𞲢 |      20000000 | INDIC SIYAQ NUMBER KARORAN
+  U+1ECA3 |         𞲣 |             1 | INDIC SIYAQ NUMBER PREFIXED ONE
+  U+1ECA4 |         𞲤 |             2 | INDIC SIYAQ NUMBER PREFIXED TWO
+  U+1ECA5 |         𞲥 |             3 | INDIC SIYAQ NUMBER PREFIXED THREE
+  U+1ECA6 |         𞲦 |             4 | INDIC SIYAQ NUMBER PREFIXED FOUR
+  U+1ECA7 |         𞲧 |             5 | INDIC SIYAQ NUMBER PREFIXED FIVE
+  U+1ECA8 |         𞲨 |             6 | INDIC SIYAQ NUMBER PREFIXED SIX
+  U+1ECA9 |         𞲩 |             7 | INDIC SIYAQ NUMBER PREFIXED SEVEN
+  U+1ECAA |         𞲪 |             8 | INDIC SIYAQ NUMBER PREFIXED EIGHT
+  U+1ECAB |         𞲫 |             9 | INDIC SIYAQ NUMBER PREFIXED NINE
+  U+1ECAD |         𞲭 |         (1/4) | INDIC SIYAQ FRACTION ONE QUARTER
+  U+1ECAE |         𞲮 |         (1/2) | INDIC SIYAQ FRACTION ONE HALF
+  U+1ECAF |         𞲯 |         (3/4) | INDIC SIYAQ FRACTION THREE QUARTERS
+  U+1ECB1 |         𞲱 |             1 | INDIC SIYAQ NUMBER ALTERNATE ONE
+  U+1ECB2 |         𞲲 |             2 | INDIC SIYAQ NUMBER ALTERNATE TWO
+  U+1ECB3 |         𞲳 |         10000 | INDIC SIYAQ NUMBER ALTERNATE TEN THOUSAND
+  U+1ECB4 |         𞲴 |        100000 | INDIC SIYAQ ALTERNATE LAKH MARK
   U+1F100 |         🄀 |             0 | DIGIT ZERO FULL STOP
   U+1F101 |         🄁 |             0 | DIGIT ZERO COMMA
   U+1F102 |         🄂 |             1 | DIGIT ONE COMMA
@@ -1642,5 +1793,5 @@ See [unicode-x](https://github.com/janlelis/unicode-x) for more Unicode related 
 
 ## MIT License
 
-- Copyright (C) 2016 Jan Lelis <http://janlelis.com>. Released under the MIT license.
+- Copyright (C) 2016-2018 Jan Lelis <http://janlelis.com>. Released under the MIT license.
 - Unicode data: http://www.unicode.org/copyright.html#Exhibit1
