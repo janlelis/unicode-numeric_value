@@ -2,7 +2,7 @@
 
 Convert a Unicode character into its numeric value.
 
-Unicode version: **11.0.0**
+Unicode version: **12.0.0**
 
 Supported Rubies: **2.6**, **2.5**, **2.4**, **2.3**
 
