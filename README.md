@@ -26,6 +26,7 @@ Unicode::NumericValue.of("Ⅷ") # => 8
 Unicode::NumericValue.of("⓳") # => 19
 Unicode::NumericValue.of("¾") # => (3/4)
 Unicode::NumericValue.of("༳") # => (-1/2)
+Unicode::NumericValue.of("𑿀") # => (1/320)
 Unicode::NumericValue.of("𖭡") # => 1000000000000
 Unicode::NumericValue.of("五") # => 5
 Unicode::NumericValue.of("A") # => nil
@@ -1417,6 +1418,27 @@ Codepoint | Character | Numeric Value | Name
   U+11DA7 |         𑶧 |             7 | GUNJALA GONDI DIGIT SEVEN
   U+11DA8 |         𑶨 |             8 | GUNJALA GONDI DIGIT EIGHT
   U+11DA9 |         𑶩 |             9 | GUNJALA GONDI DIGIT NINE
+  U+11FC0 |         𑿀 |       (1/320) | TAMIL FRACTION ONE THREE-HUNDRED-AND-TWENTIETH
+  U+11FC1 |         𑿁 |       (1/160) | TAMIL FRACTION ONE ONE-HUNDRED-AND-SIXTIETH
+  U+11FC2 |         𑿂 |        (1/80) | TAMIL FRACTION ONE EIGHTIETH
+  U+11FC3 |         𑿃 |        (1/64) | TAMIL FRACTION ONE SIXTY-FOURTH
+  U+11FC4 |         𑿄 |        (1/40) | TAMIL FRACTION ONE FORTIETH
+  U+11FC5 |         𑿅 |        (1/32) | TAMIL FRACTION ONE THIRTY-SECOND
+  U+11FC6 |         𑿆 |        (3/80) | TAMIL FRACTION THREE EIGHTIETHS
+  U+11FC7 |         𑿇 |        (3/64) | TAMIL FRACTION THREE SIXTY-FOURTHS
+  U+11FC8 |         𑿈 |        (1/20) | TAMIL FRACTION ONE TWENTIETH
+  U+11FC9 |         𑿉 |        (1/16) | TAMIL FRACTION ONE SIXTEENTH-1
+  U+11FCA |         𑿊 |        (1/16) | TAMIL FRACTION ONE SIXTEENTH-2
+  U+11FCB |         𑿋 |        (1/10) | TAMIL FRACTION ONE TENTH
+  U+11FCC |         𑿌 |         (1/8) | TAMIL FRACTION ONE EIGHTH
+  U+11FCD |         𑿍 |        (3/20) | TAMIL FRACTION THREE TWENTIETHS
+  U+11FCE |         𑿎 |        (3/16) | TAMIL FRACTION THREE SIXTEENTHS
+  U+11FCF |         𑿏 |         (1/5) | TAMIL FRACTION ONE FIFTH
+  U+11FD0 |         𑿐 |         (1/4) | TAMIL FRACTION ONE QUARTER
+  U+11FD1 |         𑿑 |         (1/2) | TAMIL FRACTION ONE HALF-1
+  U+11FD2 |         𑿒 |         (1/2) | TAMIL FRACTION ONE HALF-2
+  U+11FD3 |         𑿓 |         (3/4) | TAMIL FRACTION THREE QUARTERS
+  U+11FD4 |         𑿔 |       (1/320) | TAMIL FRACTION DOWNSCALING FACTOR KIIZH
   U+12400 |         𒐀 |             2 | CUNEIFORM NUMERIC SIGN TWO ASH
   U+12401 |         𒐁 |             3 | CUNEIFORM NUMERIC SIGN THREE ASH
   U+12402 |         𒐂 |             4 | CUNEIFORM NUMERIC SIGN FOUR ASH
@@ -1673,6 +1695,26 @@ Codepoint | Character | Numeric Value | Name
   U+1D7FD |         𝟽 |             7 | MATHEMATICAL MONOSPACE DIGIT SEVEN
   U+1D7FE |         𝟾 |             8 | MATHEMATICAL MONOSPACE DIGIT EIGHT
   U+1D7FF |         𝟿 |             9 | MATHEMATICAL MONOSPACE DIGIT NINE
+  U+1E140 |         𞅀 |             0 | NYIAKENG PUACHUE HMONG DIGIT ZERO
+  U+1E141 |         𞅁 |             1 | NYIAKENG PUACHUE HMONG DIGIT ONE
+  U+1E142 |         𞅂 |             2 | NYIAKENG PUACHUE HMONG DIGIT TWO
+  U+1E143 |         𞅃 |             3 | NYIAKENG PUACHUE HMONG DIGIT THREE
+  U+1E144 |         𞅄 |             4 | NYIAKENG PUACHUE HMONG DIGIT FOUR
+  U+1E145 |         𞅅 |             5 | NYIAKENG PUACHUE HMONG DIGIT FIVE
+  U+1E146 |         𞅆 |             6 | NYIAKENG PUACHUE HMONG DIGIT SIX
+  U+1E147 |         𞅇 |             7 | NYIAKENG PUACHUE HMONG DIGIT SEVEN
+  U+1E148 |         𞅈 |             8 | NYIAKENG PUACHUE HMONG DIGIT EIGHT
+  U+1E149 |         𞅉 |             9 | NYIAKENG PUACHUE HMONG DIGIT NINE
+  U+1E2F0 |         𞋰 |             0 | WANCHO DIGIT ZERO
+  U+1E2F1 |         𞋱 |             1 | WANCHO DIGIT ONE
+  U+1E2F2 |         𞋲 |             2 | WANCHO DIGIT TWO
+  U+1E2F3 |         𞋳 |             3 | WANCHO DIGIT THREE
+  U+1E2F4 |         𞋴 |             4 | WANCHO DIGIT FOUR
+  U+1E2F5 |         𞋵 |             5 | WANCHO DIGIT FIVE
+  U+1E2F6 |         𞋶 |             6 | WANCHO DIGIT SIX
+  U+1E2F7 |         𞋷 |             7 | WANCHO DIGIT SEVEN
+  U+1E2F8 |         𞋸 |             8 | WANCHO DIGIT EIGHT
+  U+1E2F9 |         𞋹 |             9 | WANCHO DIGIT NINE
   U+1E8C7 |         𞣇 |             1 | MENDE KIKAKUI DIGIT ONE
   U+1E8C8 |         𞣈 |             2 | MENDE KIKAKUI DIGIT TWO
   U+1E8C9 |         𞣉 |             3 | MENDE KIKAKUI DIGIT THREE
@@ -1758,6 +1800,66 @@ Codepoint | Character | Numeric Value | Name
   U+1ECB2 |         𞲲 |             2 | INDIC SIYAQ NUMBER ALTERNATE TWO
   U+1ECB3 |         𞲳 |         10000 | INDIC SIYAQ NUMBER ALTERNATE TEN THOUSAND
   U+1ECB4 |         𞲴 |        100000 | INDIC SIYAQ ALTERNATE LAKH MARK
+  U+1ED01 |         𞴁 |             1 | OTTOMAN SIYAQ NUMBER ONE
+  U+1ED02 |         𞴂 |             2 | OTTOMAN SIYAQ NUMBER TWO
+  U+1ED03 |         𞴃 |             3 | OTTOMAN SIYAQ NUMBER THREE
+  U+1ED04 |         𞴄 |             4 | OTTOMAN SIYAQ NUMBER FOUR
+  U+1ED05 |         𞴅 |             5 | OTTOMAN SIYAQ NUMBER FIVE
+  U+1ED06 |         𞴆 |             6 | OTTOMAN SIYAQ NUMBER SIX
+  U+1ED07 |         𞴇 |             7 | OTTOMAN SIYAQ NUMBER SEVEN
+  U+1ED08 |         𞴈 |             8 | OTTOMAN SIYAQ NUMBER EIGHT
+  U+1ED09 |         𞴉 |             9 | OTTOMAN SIYAQ NUMBER NINE
+  U+1ED0A |         𞴊 |            10 | OTTOMAN SIYAQ NUMBER TEN
+  U+1ED0B |         𞴋 |            20 | OTTOMAN SIYAQ NUMBER TWENTY
+  U+1ED0C |         𞴌 |            30 | OTTOMAN SIYAQ NUMBER THIRTY
+  U+1ED0D |         𞴍 |            40 | OTTOMAN SIYAQ NUMBER FORTY
+  U+1ED0E |         𞴎 |            50 | OTTOMAN SIYAQ NUMBER FIFTY
+  U+1ED0F |         𞴏 |            60 | OTTOMAN SIYAQ NUMBER SIXTY
+  U+1ED10 |         𞴐 |            70 | OTTOMAN SIYAQ NUMBER SEVENTY
+  U+1ED11 |         𞴑 |            80 | OTTOMAN SIYAQ NUMBER EIGHTY
+  U+1ED12 |         𞴒 |            90 | OTTOMAN SIYAQ NUMBER NINETY
+  U+1ED13 |         𞴓 |           100 | OTTOMAN SIYAQ NUMBER ONE HUNDRED
+  U+1ED14 |         𞴔 |           200 | OTTOMAN SIYAQ NUMBER TWO HUNDRED
+  U+1ED15 |         𞴕 |           300 | OTTOMAN SIYAQ NUMBER THREE HUNDRED
+  U+1ED16 |         𞴖 |           400 | OTTOMAN SIYAQ NUMBER FOUR HUNDRED
+  U+1ED17 |         𞴗 |           500 | OTTOMAN SIYAQ NUMBER FIVE HUNDRED
+  U+1ED18 |         𞴘 |           600 | OTTOMAN SIYAQ NUMBER SIX HUNDRED
+  U+1ED19 |         𞴙 |           700 | OTTOMAN SIYAQ NUMBER SEVEN HUNDRED
+  U+1ED1A |         𞴚 |           800 | OTTOMAN SIYAQ NUMBER EIGHT HUNDRED
+  U+1ED1B |         𞴛 |           900 | OTTOMAN SIYAQ NUMBER NINE HUNDRED
+  U+1ED1C |         𞴜 |          1000 | OTTOMAN SIYAQ NUMBER ONE THOUSAND
+  U+1ED1D |         𞴝 |          2000 | OTTOMAN SIYAQ NUMBER TWO THOUSAND
+  U+1ED1E |         𞴞 |          3000 | OTTOMAN SIYAQ NUMBER THREE THOUSAND
+  U+1ED1F |         𞴟 |          4000 | OTTOMAN SIYAQ NUMBER FOUR THOUSAND
+  U+1ED20 |         𞴠 |          5000 | OTTOMAN SIYAQ NUMBER FIVE THOUSAND
+  U+1ED21 |         𞴡 |          6000 | OTTOMAN SIYAQ NUMBER SIX THOUSAND
+  U+1ED22 |         𞴢 |          7000 | OTTOMAN SIYAQ NUMBER SEVEN THOUSAND
+  U+1ED23 |         𞴣 |          8000 | OTTOMAN SIYAQ NUMBER EIGHT THOUSAND
+  U+1ED24 |         𞴤 |          9000 | OTTOMAN SIYAQ NUMBER NINE THOUSAND
+  U+1ED25 |         𞴥 |         10000 | OTTOMAN SIYAQ NUMBER TEN THOUSAND
+  U+1ED26 |         𞴦 |         20000 | OTTOMAN SIYAQ NUMBER TWENTY THOUSAND
+  U+1ED27 |         𞴧 |         30000 | OTTOMAN SIYAQ NUMBER THIRTY THOUSAND
+  U+1ED28 |         𞴨 |         40000 | OTTOMAN SIYAQ NUMBER FORTY THOUSAND
+  U+1ED29 |         𞴩 |         50000 | OTTOMAN SIYAQ NUMBER FIFTY THOUSAND
+  U+1ED2A |         𞴪 |         60000 | OTTOMAN SIYAQ NUMBER SIXTY THOUSAND
+  U+1ED2B |         𞴫 |         70000 | OTTOMAN SIYAQ NUMBER SEVENTY THOUSAND
+  U+1ED2C |         𞴬 |         80000 | OTTOMAN SIYAQ NUMBER EIGHTY THOUSAND
+  U+1ED2D |         𞴭 |         90000 | OTTOMAN SIYAQ NUMBER NINETY THOUSAND
+  U+1ED2F |         𞴯 |             2 | OTTOMAN SIYAQ ALTERNATE NUMBER TWO
+  U+1ED30 |         𞴰 |             3 | OTTOMAN SIYAQ ALTERNATE NUMBER THREE
+  U+1ED31 |         𞴱 |             4 | OTTOMAN SIYAQ ALTERNATE NUMBER FOUR
+  U+1ED32 |         𞴲 |             5 | OTTOMAN SIYAQ ALTERNATE NUMBER FIVE
+  U+1ED33 |         𞴳 |             6 | OTTOMAN SIYAQ ALTERNATE NUMBER SIX
+  U+1ED34 |         𞴴 |             7 | OTTOMAN SIYAQ ALTERNATE NUMBER SEVEN
+  U+1ED35 |         𞴵 |             8 | OTTOMAN SIYAQ ALTERNATE NUMBER EIGHT
+  U+1ED36 |         𞴶 |             9 | OTTOMAN SIYAQ ALTERNATE NUMBER NINE
+  U+1ED37 |         𞴷 |            10 | OTTOMAN SIYAQ ALTERNATE NUMBER TEN
+  U+1ED38 |         𞴸 |           400 | OTTOMAN SIYAQ ALTERNATE NUMBER FOUR HUNDRED
+  U+1ED39 |         𞴹 |           600 | OTTOMAN SIYAQ ALTERNATE NUMBER SIX HUNDRED
+  U+1ED3A |         𞴺 |          2000 | OTTOMAN SIYAQ ALTERNATE NUMBER TWO THOUSAND
+  U+1ED3B |         𞴻 |         10000 | OTTOMAN SIYAQ ALTERNATE NUMBER TEN THOUSAND
+  U+1ED3C |         𞴼 |         (1/2) | OTTOMAN SIYAQ FRACTION ONE HALF
+  U+1ED3D |         𞴽 |         (1/6) | OTTOMAN SIYAQ FRACTION ONE SIXTH
   U+1F100 |         🄀 |             0 | DIGIT ZERO FULL STOP
   U+1F101 |         🄁 |             0 | DIGIT ZERO COMMA
   U+1F102 |         🄂 |             1 | DIGIT ONE COMMA
@@ -1787,7 +1889,6 @@ Codepoint | Character | Numeric Value | Name
   U+23B1B |         𣬛 |             3 | CJK UNIFIED IDEOGRAPH-23B1B
   U+2626D |         𦉭 |             4 | CJK UNIFIED IDEOGRAPH-2626D
   U+2F890 |         廾 |             9 | CJK COMPATIBILITY IDEOGRAPH-2F890
-
 
 See [unicode-x](https://github.com/janlelis/unicode-x) for more Unicode related micro libraries.
 
