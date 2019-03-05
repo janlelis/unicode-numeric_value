@@ -34,6 +34,8 @@ Unicode::NumericValue.of("A") # => nil
 
 # All Numeric Values
 
+Also available at: [character.construction/numbers](https://character.construction/numbers)
+
 Generated with:
 
 ```ruby
