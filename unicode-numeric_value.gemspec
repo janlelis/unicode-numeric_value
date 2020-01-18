@@ -5,10 +5,10 @@ require File.dirname(__FILE__) + "/lib/unicode/numeric_value/constants"
 Gem::Specification.new do |gem|
   gem.name          = "unicode-numeric_value"
   gem.version       = Unicode::NumericValue::VERSION
-  gem.summary       = "Convert a Unicode character into its numeric value."
-  gem.description   = "[Unicode #{Unicode::NumericValue::UNICODE_VERSION}] Convert a Unicode character into its numeric value."
+  gem.summary       = "Returns the numeric value associated with a Unicode character"
+  gem.description   = "[Unicode #{Unicode::NumericValue::UNICODE_VERSION}] Returns the numeric value associated with a Unicode character"
   gem.authors       = ["Jan Lelis"]
-  gem.email         = ["mail@janlelis.de"]
+  gem.email         = ["hi@ruby.consulting"]
   gem.homepage      = "https://github.com/janlelis/unicode-numeric_value"
   gem.license       = "MIT"
 
@@ -17,5 +17,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.required_ruby_version = "~> 2.0"
+  gem.required_ruby_version = ">= 2.0"
 end
