@@ -62,4 +62,4 @@ puts "Codepoint | Character | Numeric Value | Name\n" \
 ## MIT License
 
 - Copyright (C) 2016-2020 Jan Lelis <https://janlelis.com>. Released under the MIT license.
-- Unicode data: http://www.unicode.org/copyright.html#Exhibit1
+- Unicode data: https://www.unicode.org/copyright.html#Exhibit1
