@@ -1,4 +1,4 @@
-# Unicode::NumericValue [![[version]](https://badge.fury.io/rb/unicode-numeric_value.svg)](https://badge.fury.io/rb/unicode-numeric_value)  [![[travis]](https://travis-ci.org/janlelis/unicode-numeric_value.png)](https://travis-ci.org/janlelis/unicode-numeric_value)
+# Unicode::NumericValue [![[version]](https://badge.fury.io/rb/unicode-numeric_value.svg)](https://badge.fury.io/rb/unicode-numeric_value)  [![[ci]](https://github.com/janlelis/unicode-numeric_value/workflows/Test/badge.svg)](https://github.com/janlelis/unicode-numeric_value/actions?query=workflow%3ATest)
 
 Convert a Unicode character into its numeric value.
 
