@@ -19,6 +19,10 @@ describe Unicode::NumericValue do
       assert_equal nil, Unicode::NumericValue.of("A")
       assert_equal nil, Unicode::NumericValue.of("\0")
     end
+
+    it "works with numbers from recent Unicode versions" do
+      assert_equal 0, Unicode::NumericValue.of("𝋀") # Unicode 15.0
+    end
   end
 
   describe ".chars" do
