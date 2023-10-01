@@ -16,8 +16,8 @@ describe Unicode::NumericValue do
     end
 
     it "will return nil if no numeric value associated" do
-      assert_equal nil, Unicode::NumericValue.of("A")
-      assert_equal nil, Unicode::NumericValue.of("\0")
+      assert_nil Unicode::NumericValue.of("A")
+      assert_nil Unicode::NumericValue.of("\0")
     end
 
     it "works with numbers from recent Unicode versions" do
