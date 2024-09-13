@@ -29,6 +29,7 @@ Unicode::NumericValue.of("༳") # => (-1/2)
 Unicode::NumericValue.of("𑿀") # => (1/320)
 Unicode::NumericValue.of("𖭡") # => 1000000000000
 Unicode::NumericValue.of("五") # => 5
+Unicode::NumericValue.of("𜳷") # => 7
 Unicode::NumericValue.of("A") # => nil
 ```
 
