@@ -3,6 +3,7 @@
 ### 1.12.0 (unreleased)
 
 - Unicode 17.0
+- Move index to INDEX[:NUMBERS] instead of just INDEX
 
 ### 1.11.0
 

@@ -6,13 +6,13 @@ module Unicode
       codepoint = char.unpack("U")[0] or
           raise(ArgumentError, "Unicode::NumericValue.numeric_value must be given a valid char")
       require_relative "numeric_value/index" unless defined? ::Unicode::NumericValue::INDEX
-      INDEX[codepoint]
+      INDEX[:NUMBERS][codepoint]
     end
     class << self; alias of numeric_value; end
 
     def self.chars
       require_relative "numeric_value/index" unless defined? ::Unicode::NumericValue::INDEX
-      INDEX.keys.sort.map{ |codepoint| [codepoint].pack("U") }
+      INDEX[:NUMBERS].keys.sort.map{ |codepoint| [codepoint].pack("U") }
     end
   end
 end
