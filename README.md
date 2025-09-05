@@ -2,7 +2,7 @@
 
 Convert a Unicode character into its numeric value.
 
-Unicode version: **16.0.0** (September 2024)
+Unicode version: **17.0.0** (September 2025)
 
 ## Gemfile
 
