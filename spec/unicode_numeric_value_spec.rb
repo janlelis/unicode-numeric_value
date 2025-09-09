@@ -10,6 +10,10 @@ describe Unicode::NumericValue do
       assert_equal 1000000000000, Unicode::NumericValue.of("𖭡")
     end
 
+    it "works with numbers from Unicode 17 (2025)" do
+      assert_equal 1, Unicode::NumericValue.of("𑷡")
+    end
+
     it "works with numbers from Unicode 16 (2024)" do
       assert_equal 7, Unicode::NumericValue.of("𜳷")
     end
