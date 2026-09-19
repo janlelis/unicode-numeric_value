@@ -1,4 +1,5 @@
 require_relative "../lib/unicode/numeric_value"
+require "minitest/mock"
 require "minitest/autorun"
 
 describe Unicode::NumericValue do
