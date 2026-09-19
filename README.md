@@ -55,6 +55,7 @@ puts "Codepoint | Character | Numeric Value | Name\n" \
 ## Also See
 
 - [unicode-x](https://github.com/janlelis/unicode-x): more Unicode related micro libraries
+- JavaScript version: [unicode-number.js](https://github.com/janlelis/unicode-number.js)
 
 ## MIT License
 
