@@ -11,12 +11,20 @@ describe Unicode::NumericValue do
       assert_equal 1000000000000, Unicode::NumericValue.of("𖭡")
     end
 
+    it "works with numbers from Unicode 18 (2026)" do
+      assert_equal 7, Unicode::NumericValue.of("\u{1257F}")
+    end
+
     it "works with numbers from Unicode 17 (2025)" do
       assert_equal 1, Unicode::NumericValue.of("𑷡")
     end
 
     it "works with numbers from Unicode 16 (2024)" do
       assert_equal 7, Unicode::NumericValue.of("𜳷")
+    end
+
+    it "works with numbers from Unicode 15 (2023)" do
+      assert_equal 0, Unicode::NumericValue.of("𝋀")
     end
 
     it "will return rational values" do
@@ -27,10 +35,6 @@ describe Unicode::NumericValue do
     it "will return nil if no numeric value associated" do
       assert_nil Unicode::NumericValue.of("A")
       assert_nil Unicode::NumericValue.of("\0")
-    end
-
-    it "works with numbers from recent Unicode versions" do
-      assert_equal 0, Unicode::NumericValue.of("𝋀") # Unicode 15.0
     end
   end
 
